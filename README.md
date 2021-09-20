@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
+# React Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a calculator web app created using React. [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to run
 
 In the project directory, you can run:
 
@@ -68,3 +69,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author 👤 
+
+👨‍💻 **Jose Alberto Arriaga Ramos**
+
+- GitHub: [@jaarkira](https://github.com/jaarkira )
+- Twitter: [@91_jaar](https://twitter.com/91_jaar )
+- LinkedIn: [Jose Arriaga](https://www.linkedin.com/in/jaar/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/DanSam5K/Webflix-Index/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used 🔰
+- Inspiration 💘
+- Microverse program ⚡
+- Our standup team 🏹
+- Our family's support 🙌
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
