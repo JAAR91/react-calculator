@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CalcButton, { CalcDisplay } from './components/Calculator';
+import calculate from './logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -19,10 +20,10 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const { next, total, operation } = this.state;
+    const calcObject = this.state;
     const value = (
       <div className="Calculator row p-0 shadow fs-2 mx-auto mt-3 rounded-3">
-        <CalcDisplay total={total} next={next} operation={operation} />
+        <CalcDisplay calcObject={calcObject} />
         <CalcButton text="AC" Bclass="true" cFunction={this.handleClick} />
         <CalcButton text="+/-" Bclass="true" cFunction={this.handleClick} />
         <CalcButton text="%" Bclass="true" cFunction={this.handleClick} />

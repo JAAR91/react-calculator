@@ -2,7 +2,11 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export const CalcDisplay = (props) => {
-  const ans = <span className="CalcDisplay col-12 fs-1 bg-secondary text-white m-0 text-end rounded-top py-4">{props.text}</span>;
+  const { total, next, operation } = props.calcObject;
+  let ans = <span className="CalcDisplay col-12 fs-1 bg-secondary text-white m-0 text-end rounded-top py-4">{total}</span>;
+  if (total === null || (next && operation)) {
+    ans = <span className="CalcDisplay col-12 fs-1 bg-secondary text-white m-0 text-end rounded-top py-4">{next}</span>;
+  }
   return ans;
 };
 
@@ -34,6 +38,7 @@ class CalcButton extends Component {
 CalcButton.propTypes = {
   text: PropTypes.string.isRequired,
   Bclass: PropTypes.string.isRequired,
+  cFunction: PropTypes.func.isRequired,
 };
 
 export default CalcButton;
