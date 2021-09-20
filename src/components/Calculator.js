@@ -7,14 +7,24 @@ export const CalcDisplay = (props) => {
 };
 
 class CalcButton extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    const { cFunction } = this.props;
+    cFunction(e.target.textContent);
+  }
+
   render() {
     const { text, Bclass } = this.props;
-    let ans = <button className="col-3 p-5 bg-orange" type="button">{text}</button>;
+    let ans = <button className="col-3 p-5 bg-orange" type="button" onClick={this.handleClick}>{text}</button>;
     if (Bclass === 'true') {
-      ans = <button className="col-3 p-5 bg-white" type="button">{text}</button>;
+      ans = <button className="col-3 p-5 bg-white" type="button" onClick={this.handleClick}>{text}</button>;
     }
     if (text === '0') {
-      ans = <button className="col-6 p-5 bg-white" type="button">{text}</button>;
+      ans = <button className="col-6 p-5 bg-white" type="button" onClick={this.handleClick}>{text}</button>;
     }
 
     return ans;
