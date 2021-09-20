@@ -1,29 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CalcButton, { CalcDisplay } from './components/Calculator';
+
+class Calculator extends React.Component {
+  render() {
+    const value = (
+      <div className="Calculator row p-0 shadow fs-2 mx-auto mt-3 rounded-3">
+        <CalcDisplay text="0" />
+        <CalcButton text="AC" Bclass="true" />
+        <CalcButton text="+/-" Bclass="true" />
+        <CalcButton text="%" Bclass="true" />
+        <CalcButton text="÷" Bclass="false" />
+        <CalcButton text="9" Bclass="true" />
+        <CalcButton text="8" Bclass="true" />
+        <CalcButton text="9" Bclass="true" />
+        <CalcButton text="x" Bclass="false" />
+        <CalcButton text="4" Bclass="true" />
+        <CalcButton text="5" Bclass="true" />
+        <CalcButton text="6" Bclass="true" />
+        <CalcButton text="-" Bclass="false" />
+        <CalcButton text="1" Bclass="true" />
+        <CalcButton text="2" Bclass="true" />
+        <CalcButton text="3" Bclass="true" />
+        <CalcButton text="+" Bclass="false" />
+        <CalcButton text="0" Bclass="true" />
+        <CalcButton text="." Bclass="true" />
+        <CalcButton text="=" Bclass="false" />
+      </div>
+    );
+    return value;
+  }
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>
-            src/App.js
-          </code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  ReactDOM.render(<Calculator />,
+    document.getElementById('container'));
 }
 
 export default App;
