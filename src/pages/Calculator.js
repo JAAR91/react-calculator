@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
-import CalcButton, { CalcDisplay } from './components/Calculator';
-import calculate from './logic/calculate';
+import CalcButton, { CalcDisplay } from '../components/Buttons';
+import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [calcObject, setDisplay] = useState({
@@ -41,9 +40,4 @@ const Calculator = () => {
   return value;
 };
 
-function App() {
-  ReactDOM.render(<Calculator />,
-    document.getElementById('container'));
-}
-
-export default App;
+export default Calculator;

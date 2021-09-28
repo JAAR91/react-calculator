@@ -37,10 +37,15 @@ code {
 }
 
 .bg-orange {
-  border: 1px solid #adadad;
+  border: 1px solid #0c2968;
   background-color: #f3ab4c;
 }
 
 .CalcDisplay {
   height: 90px;
+}
+
+.test {
+  display: flex;
+  justify-content: space-between;
 }
