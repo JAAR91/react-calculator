@@ -1,0 +1,21 @@
+.bg-mywhite {
+  border: 1px solid #adadad;
+  background-color: #fff;
+}
+
+.bg-orange {
+  border: 1px solid #adadad;
+  background-color: #cf882a;
+}
+
+.bg-mywhite:active {
+  background-color: #c5cf30;
+  color: #fff;
+  border: orange;
+}
+
+.bg-orange:active {
+  background-color: #3b1258;
+  color: #fff;
+  border: orange;
+}

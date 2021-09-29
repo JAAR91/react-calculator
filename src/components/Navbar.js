@@ -36,11 +36,6 @@ const Navbar = () => {
     paddingTop: '20px',
   };
 
-  const titleStyle = {
-    color: '#ffffff',
-    fontSize: '40px',
-  };
-
   const navStyle = {
     backgroundColor: '#1d2249',
     display: 'flex',
@@ -51,7 +46,13 @@ const Navbar = () => {
 
   return (
     <nav style={navStyle}>
-      <p style={titleStyle}>Math Magicians</p>
+      <p style={{
+        color: '#ffffff',
+        fontSize: '40px',
+      }}
+      >
+        Math Magicians
+      </p>
       <ul style={ulStyle}>
         {links.map((link) => (
           <li key={link.id}>

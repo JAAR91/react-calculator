@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './Buttons.scss';
 
 export const CalcDisplay = (props) => {
   const { result } = props;
@@ -18,7 +19,7 @@ const CalcButton = (props) => {
 
   return (
     <button
-      className={`p-5 calc-font ${(Bclass === 'true') ? 'bg-white' : 'bg-orange'} ${(text === '0') ? 'col-6' : 'col-3'}`}
+      className={`p-5 calc-font ${(text === '0') ? 'col-6' : 'col-3'} ${(Bclass === 'true') ? 'bg-mywhite' : 'bg-orange'}`}
       type="button"
       onClick={buttonClick}
     >

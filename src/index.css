@@ -42,16 +42,6 @@ code {
   width: 700px;
 }
 
-.bg-white {
-  border: 1px solid #adadad;
-  background-color: #fff;
-}
-
-.bg-orange {
-  border: 1px solid #0c2968;
-  background-color: #f3ab4c;
-}
-
 .calc-font {
   font-family: CalculatorFont, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
