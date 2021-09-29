@@ -1,3 +1,12 @@
+* {
+  font-family: 'Comic Neue', cursive;
+}
+
+@font-face {
+  font-family: CalculatorFont;
+  src: url('./fonts/digital-7.ttf');
+}
+
 body {
   margin: 0;
   font-family:
@@ -14,6 +23,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/numberpatterbackground.jpg');
+  background-repeat: repeat;
+  background-size: 450px;
 }
 
 code {
@@ -28,12 +40,11 @@ code {
 
 .Calculator {
   width: 700px;
-  margin: auto;
 }
 
 .bg-white {
   border: 1px solid #adadad;
-  background-color: white;
+  background-color: #fff;
 }
 
 .bg-orange {
@@ -41,11 +52,26 @@ code {
   background-color: #f3ab4c;
 }
 
+.calc-font {
+  font-family: CalculatorFont, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .CalcDisplay {
+  background-color: rgb(18, 17, 56);
   height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 20px;
+  font-size: 50px;
 }
 
 .test {
   display: flex;
   justify-content: space-between;
+  font-size: 30px;
+  list-style: none;
+  color: #fff;
+  padding-top: 10px;
 }
