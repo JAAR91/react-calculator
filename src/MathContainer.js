@@ -19,7 +19,7 @@ const MathContainer = () => (
       <Route exact path="/calculator/">
         <Calculator />
       </Route>
-      <Route exact path="/about/">
+      <Route exact path="/quotes/">
         <Quote />
       </Route>
       <Route path="*">
