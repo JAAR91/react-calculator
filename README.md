@@ -7,6 +7,10 @@ This is a calculator web app created using React. [Create React App](https://git
 
 In the project directory, you can run:
 
+## Live Version:
+
+- [Heroku](na)
+
 ### `npm start`
 
 Runs the app in the development mode.\
