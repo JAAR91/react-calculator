@@ -9,7 +9,9 @@ In the project directory, you can run:
 
 ## Live Version:
 
-- [Heroku](na)
+- [Heroku](https://jaarcalculator.herokuapp.com/)
+- [Netlify](https://jaarcalculator.netlify.app/)
+
 
 ### `npm start`
 
